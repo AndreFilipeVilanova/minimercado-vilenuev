@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimercado Vilenuev</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2.5em;
+        }
+        header nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        h2, h3 {
+            text-align: center;
+            color: #4CAF50;
+            font-family: 'Poppins', sans-serif;
+        }
+        h3 {
+            color: #FFC107;
+            margin-bottom: 15px;
+        }
+        main {
+            padding: 20px;
+        }
+        .product-card, .service-card {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+            width: 250px;
+            display: inline-block;
+        }
+        .product-card img, .service-card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+        .product-card button, .service-card button {
+            background-color: #FFC107;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .product-card button:hover, .service-card button:hover {
+            background-color: #E0A800;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        footer a {
+            color: #FFC107;
+            text-decoration: none;
+        }
+        .product-section {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Minimercado Vilenuev</h1>
+        <nav>
+            <a href="#produtos">Produtos</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- Corpo das Páginas -->
+    <main>
+        <!-- Seção de Produtos -->
+        <section id="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <!-- Categoria: Frutas -->
+            <h3>Frutas</h3>
+            <div class="product-section">
+                <div class="product-card">
+                    <img src="fruta1.webp" alt="Maçã">
+                    <p>Maçã - <strong>R$3,00/unidade</strong></p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="fruta2.webp" alt="Banana">
+                    <p>Banana - <strong>R$2,50/unidade</strong></p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <!-- Categoria: Verduras -->
+            <h3>Verduras</h3>
+            <div class="product-section">
+                <div class="product-card">
+                    <img src="verdura1.webp" alt="Alface">
+                    <p>Alface - <strong>R$2,00/unidade</strong></p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="verdura2.webp" alt="Couve">
+                    <p>Couve - <strong>R$3,50/unidade</strong></p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <!-- Categoria: Produtos de Higiene -->
+            <h3>Produtos de Higiene</h3>
+            <div class="product-section">
+                <div class="product-card">
+                    <img src="higiene1.webp" alt="Sabonete">
+                    <p>Sabonete - <strong>R$1,50/unidade</strong></p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="higiene2.webp" alt="Pasta de Dente">
+                    <p>Pasta de Dente - <strong>R$4,00</strong></p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+
+            <!-- Categoria: Produtos de Limpeza -->
+            <h3>Produtos de Limpeza</h3>
+            <div class="product-section">
+                <div class="product-card">
+                    <img src="limpeza1.webp" alt="Sabão em Pó">
+                    <p>Sabão em Pó - <strong>R$10,00</strong></p>
+                    <button>Comprar</button>
+                </div>
+                <div class="product-card">
+                    <img src="limpeza2.webp" alt="Desinfetante">
+                    <p>Desinfetante - <strong>R$8,00</strong></p>
+                    <button>Comprar</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção de Serviços -->
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="product-section">
+                <div class="service-card">
+                    <h3>Retirada no Local</h3>
+                    <p>Faça seu pedido online e retire diretamente em nossa loja sem custos adicionais.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Tele-entrega</h3>
+                    <p>Receba seus produtos no conforto da sua casa por uma taxa de entrega de R$5,00.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="contato">
+        <p>&copy; 2024 Minimercado Vilenuev</p>
+        <p>Contato: <a href="mailto:contato@minimercadovilenuev.com">contato@minimercadovilenuev.com</a> | Telefone: (51) 9957-80251</p>
+        <nav>
+            <a href="#produtos">Produtos</a> |
+            <a href="#servicos">Serviços</a> |
+            <a href="#contato">Contato</a>
+        </nav>
+    </footer>
+
+</body>
+</html>
