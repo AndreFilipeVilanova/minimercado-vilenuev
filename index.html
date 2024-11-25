@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minimercado Vilenuev</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
     <style>
         body {
             margin: 0;
@@ -37,6 +40,11 @@
             color: #FFC107;
             margin-bottom: 15px;
         }
+        .carousel-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: contain; /* Mantém a proporção da imagem */
+            background-color: #f8f8f8; /* Fundo para imagens menores */
         main {
             padding: 20px;
         }
@@ -97,6 +105,29 @@
         </nav>
     </header>
 
+        <!-- Carrossel -->
+    <div id="carouselProdutos" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="fruta1.webp" class="d-block w-100" alt="Maçã - Fruta Fresca">
+            </div>
+            <div class="carousel-item">
+                <img src="verdura1.webp" class="d-block w-100" alt="Alface - Verdura Fresca">
+            </div>
+            <div class="carousel-item">
+                <img src="higiene1.webp" class="d-block w-100" alt="Sabonete - Higiene Pessoal">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+    
     <!-- Corpo das Páginas -->
     <main>
         <!-- Seção de Produtos -->
